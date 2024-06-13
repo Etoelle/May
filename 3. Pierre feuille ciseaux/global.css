@@ -1,0 +1,229 @@
+@font-face {
+  font-family: Spartan;
+  src: url("/- Fonts/LeagueSpartan-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Spartan;
+  font-size: 1.1rem;
+  font-weight: 250;
+  cursor: default;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+img {
+  max-width: 6.5rem;
+  max-height: 6.5rem;
+}
+.IAhidden {
+  display: none;
+}
+
+/* Containers */
+body {
+  background-color: #e1e5ee;
+}
+header {
+  background-color: #e1e5ee;
+  color: #2a324b;
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+  padding-top: 1rem;
+}
+main {
+  background-color: #e1e5ee;
+  color: #2a324b;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.jeuContainer {
+  background-color: #aeb4c4;
+  width: 95%;
+  height: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 2rem;
+}
+.botContainer {
+  background-color: #2a324b;
+  color: #e1e5ee;
+  width: 95%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 2rem;
+}
+footer {
+  background-color: #e1e5ee;
+  color: #2a324b;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regles {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Jeu */
+.jeuVous img {
+  cursor: pointer;
+}
+.jeuVous {
+  /* background-color: brown; */
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.jeuResultat {
+  /* background-color: blueviolet; */
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jeuIA {
+  /* background-color: blue; */
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Vous */
+.jeuBtn {
+  /* background-color: chartreuse; */
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btnJeu {
+  background-color: #e1e5ee;
+  border: 0;
+  cursor: pointer;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+}
+#btnElephant {
+  background-image: url("/Img/elefant.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#btnSouris {
+  background-image: url("/Img/souris.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#btnLion {
+  background-image: url("/Img/lion.png");
+  background-size: 72%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* IA */
+.jeuChoixIA {
+  background-color: #e1e5ee;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+/* Bottom */
+.stat {
+  /* background-color: darkkhaki; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btnRejouer {
+  /* background-color: azure; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btnCleanStat {
+  /* background-color: darkgray; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btnRejouer button {
+  background-color: #2a324b;
+  color: #e1e5ee;
+  border: 0;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnCleanStat button {
+  background-color: #2a324b;
+  color: #e1e5ee;
+  border: 0;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

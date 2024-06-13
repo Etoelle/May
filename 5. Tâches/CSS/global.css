@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Roboto;
+  src: url("/- Fonts/Roboto/Roboto-Light.ttf");
+}
+:root {
+  --colored: #eb5e28;
+  --colorLight: #fffcf2;
+  --colorMedium: #ccc5b9;
+  --colorDark: #403d39;
+  --colorDarker: #252422;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 1rem;
+  border: none;
+}
+body {
+  background-color: var(--colored);
+}
+header {
+  background-color: var(--colorDarker);
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--colored);
+  font-weight: bold;
+  svg {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--colored);
+  }
+}

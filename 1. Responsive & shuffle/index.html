@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/global.css" />
+    <link rel="stylesheet" href="/CSS/base.css" />
+    <script defer src="/JS/shuffle.js"></script>
+    <title>Responsive</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/HTML/logo.html" target="_blank" title="Ne clique pas là">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M367.2 412.5L99.5 144.8C77.1 176.1 64 214.5 64 256c0 106 86 192 192 192c41.5 0 79.9-13.1 111.2-35.5zm45.3-45.3C434.9 335.9 448 297.5 448 256c0-106-86-192-192-192c-41.5 0-79.9 13.1-111.2 35.5L412.5 367.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>Jouer</li>
+          <li>Gadget-o</li>
+          <li>Contact</li>
+          <li>Profil</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="cardsContainer" id="cardsContainer">
+        <div class="cards" id="cardDruide">
+          <div class="cardsTop">
+            <div class="cardsImg">
+              <img src="/Img/Druide.jpg" alt="Druide" />
+            </div>
+            <div class="cardsTitle">Druide</div>
+          </div>
+          <div class="cardsContent">
+            Changeforme proche de la Nature, il tire sa force de cette dernière
+            et a un talent inné pour le soin.
+          </div>
+          <div class="cardsBtn">
+            <button id="cardsBtnVoirPlus">Voir plus</button>
+            <button id="cardsBtnChoisir">Choisir</button>
+          </div>
+        </div>
+        <div class="cards" id="cardDemoniste">
+          <div class="cardsTop">
+            <div class="cardsImg">
+              <img src="/Img/Démoniste.jpg" alt="Démoniste" />
+            </div>
+            <div class="cardsTitle">Démoniste</div>
+          </div>
+          <div class="cardsContent">
+            Mage sombre qui contrôle des démons et exploite leur puissance
+            dévastatrice.
+          </div>
+          <div class="cardsBtn">
+            <button id="cardsBtnVoirPlus">Voir plus</button>
+            <button id="cardsBtnChoisir">Choisir</button>
+          </div>
+        </div>
+        <div class="cards" id="cardMage">
+          <div class="cardsTop">
+            <div class="cardsImg"><img src="/Img/Mage.jpg" alt="Mage" /></div>
+            <div class="cardsTitle">Mage</div>
+          </div>
+          <div class="cardsContent">
+            Lanceur de sorts spécialiste en maîtrise des éléments et en création
+            d'élémentaires.
+          </div>
+          <div class="cardsBtn">
+            <button id="cardsBtnVoirPlus">Voir plus</button>
+            <button id="cardsBtnChoisir">Choisir</button>
+          </div>
+        </div>
+        <div class="cards" id="cardPaladin">
+          <div class="cardsTop">
+            <div class="cardsImg">
+              <img src="/Img/Paladin.jpg" alt="Paladin" />
+            </div>
+            <div class="cardsTitle">Paladin</div>
+          </div>
+          <div class="cardsContent">
+            Incarnation même de la justice faisant appel aux pouvoirs de la
+            Lumière.
+          </div>
+          <div class="cardsBtn">
+            <button id="cardsBtnVoirPlus">Voir plus</button>
+            <button id="cardsBtnChoisir">Choisir</button>
+          </div>
+        </div>
+        <div class="cards" id="cardVoleur">
+          <div class="cardsTop">
+            <div class="cardsImg">
+              <img src="/Img/Voleur.jpg" alt="Voleur" />
+            </div>
+            <div class="cardsTitle">Voleur</div>
+          </div>
+          <div class="cardsContent">
+            Assassin sournois maîtrisant les poisons et la discrétion.
+          </div>
+          <div class="cardsBtn">
+            <button id="cardsBtnVoirPlus">Voir plus</button>
+            <button id="cardsBtnChoisir">Choisir</button>
+          </div>
+        </div>
+      </div>
+      <div class="btnShuffle">
+        <button id="btnShuffle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M403.8 34.4c12-5 25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V160H352c-10.1 0-19.6 4.7-25.6 12.8L284 229.3 244 176l31.2-41.6C293.3 110.2 321.8 96 352 96h32V64c0-12.9 7.8-24.6 19.8-29.6zM164 282.7L204 336l-31.2 41.6C154.7 401.8 126.2 416 96 416H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c10.1 0 19.6-4.7 25.6-12.8L164 282.7zm274.6 188c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V416H352c-30.2 0-58.7-14.2-76.8-38.4L121.6 172.8c-6-8.1-15.5-12.8-25.6-12.8H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c30.2 0 58.7 14.2 76.8 38.4L326.4 339.2c6 8.1 15.5 12.8 25.6 12.8h32V320c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64z"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

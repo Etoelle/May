@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/global.css" />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <script defer src="/JS/script.js"></script>
+    <script defer src="/JS/list.js"></script>
+    <link rel="icon" href="/Img/taskIcon.png" />
+    <title>Nouvelle tâche</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+            />
+          </svg>
+        </div>
+        <div>Nouvelle tâche</div>
+        <div>Liste des employés</div>
+        <div>Liste des tâches</div>
+      </nav>
+    </header>
+    <main>
+      <section id="addTaskContainer" class="mainContainerL">
+        <div id="taskTitle" class="title">Ajouter une tâche</div>
+        <form action="" method="POST" name="taskForm">
+          <div id="taskContainerTop">
+            <div id="nameContainer">
+              <label for="taskName">Nom :</label>
+              <input
+                type="text"
+                name="taskName"
+                placeholder="Terminer projet"
+                id="taskName"
+                required
+                maxlength="200"
+                pattern="[a-zA-Z0-9\s]+"
+              />
+            </div>
+            <div id="descriptionContainer">
+              <label for="taskDescription">Description :</label>
+              <textarea
+                name="taskDescription"
+                placeholder="Projet gestionnaire de tâches"
+                id="taskDescription"
+                maxlength="500"
+                spellcheck="true"
+              ></textarea>
+            </div>
+          </div>
+          <div id="taskContainerDate">
+            <div id="beginDateContainer">
+              <label for="taskBeginDate">Date de début :</label>
+              <input
+                type="date"
+                name="taskBeginDate"
+                id="taskBeginDate"
+                min="2024-05-21"
+              />
+            </div>
+            <div id="limitDateContainer">
+              <label for="taskLimitDate">Date limite :</label>
+              <input
+                type="date"
+                name="taskLimitDate"
+                id="taskLimitDate"
+                required
+              />
+            </div>
+          </div>
+          <div id="taskContainerBot">
+            <label for="taskWorkerName">Assigné à :</label>
+            <select name="taskWorkerName" id="taskWorkerName" required>
+              <option value="" hidden selected>Choisissez une personne</option>
+              <optgroup label="Équipe 1" class="optLabel">
+                <option value="lara" class="optOpt">Lara</option>
+                <option value="max" class="optOpt">Max</option>
+                <option value="nina" class="optOpt">Nina</option>
+                <option value="mathis" class="optOpt">Mathis</option>
+              </optgroup>
+              <optgroup label="Équipe 2" class="optLabel">
+                <option value="marioM" class="optOpt">Mario M.</option>
+                <option value="giuseppe" class="optOpt">Giuseppe</option>
+                <option value="marioL" class="optOpt">Mario L.</option>
+                <option value="nicola" class="optOpt">Nicola</option>
+                <option value="antonietta" class="optOpt">Antonietta</option>
+              </optgroup>
+              <optgroup label="Équipe 3" class="optLabel">
+                <option value="laurine" class="optOpt">Laurine</option>
+                <option value="athena" class="optOpt">Athena</option>
+                <option value="lylou" class="optOpt">Lylou</option>
+                <option value="sandrine" class="optOpt">Sandrine</option>
+              </optgroup>
+            </select>
+            <div id="checkboxUrgent">
+              <input
+                type="checkbox"
+                name="taskUrgent"
+                id="taskUrgent"
+                optional
+              />
+              <label for="taskUrgent">Tâche Urgente</label>
+            </div>
+          </div>
+          <div id="taskContainerBtnContainer">
+            <div id="taskContainerBtn">
+              <input type="reset" value="Effacer le formulaire" id="resetBtn" />
+              <input type="submit" value="Ajouter la tâche" id="submitBtn" />
+            </div>
+          </div>
+        </form>
+      </section>
+      <section id="taskListContainer" class="mainContainerR">
+        <div id="taskListName" class="title">Liste des tâches</div>
+        <div id="taskList">
+          <!-- TODO : Ajout des tâches dans la liste à la validation du formulaire -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/global.css" />
+    <script defer src="/JS/elsoli.js"></script>
+    <title>Shifumi</title>
+    <link rel="icon" href="/Img/rps.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Éléphant | Souris | Lion</h1>
+    </header>
+    <main>
+      <div class="jeuContainer">
+        <div class="jeuVous">
+          <h2>Vous</h2>
+          <div class="jeuBtn">
+            <button id="btnElephant" class="btnJeu">
+              <!-- <img src="/Img/elefant.png" alt="Élephant" /> -->
+            </button>
+            <button id="btnSouris" class="btnJeu">
+              <!-- <img src="/Img/souris.png" alt="Souris" /> -->
+            </button>
+            <button id="btnLion" class="btnJeu">
+              <!-- <img src="/Img/lion.png" alt="Lion" /> -->
+            </button>
+          </div>
+          <div class="score">
+            <div id="jeuVousScore" class="jeuVousScore">Score</div>
+            <div id="jeuVousTotal" class="jeuTotal">0</div>
+          </div>
+        </div>
+        <div id="resultat" class="jeuResultat">Résultat</div>
+        <div class="jeuIA">
+          <h2>IA</h2>
+          <div id="jeuChoixIA" class="jeuChoixIA">
+            <img
+              class="IAChoice"
+              src="/Img/interrogation.png"
+              alt="Choix ordinateur"
+            />
+          </div>
+          <div class="score">
+            <div id="jeuIAScore" class="jeuIAScore">Score</div>
+            <div id="jeuIATotal" class="jeuTotal">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="botContainer">
+        <div class="stat">
+          <h3 class="Statistiques">Statistiques</h3>
+          <div id="nbWinVous">Vous : 0 win</div>
+          <div id="nbWinIA">IA : 0 win</div>
+        </div>
+        <div id="btnRejouer" class="btnRejouer">
+          <button>Rejouer</button>
+        </div>
+        <div id="btnCleanStat" class="btnCleanStat">
+          <button>Effacer les statistiques</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="regles">
+        <h3>Règles</h3>
+        <div>Le lion bat la souris qui bat l'éléphant qui bat le lion.</div>
+      </div>
+    </footer>
+  </body>
+</html>

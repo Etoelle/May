@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script defer src="/JS/calendarLibrary.js"></script>
+    <!-- <script defer src="/JS/calendarJS.js"></script> -->
+    <script defer src="/JS/list.js"></script>
+    <link rel="icon" href="/Img/calendar icon.png" />
+    <title>Agenda</title>
+  </head>
+  <body>
+    <main>
+      <div id="leftContainer">
+        <table id="agendaContainer">
+          <caption id="dateCaption"></caption>
+          <thead id="agendaRowHeadContainer">
+            <tr>
+              <th class="rowHead"></th>
+              <th class="rowHead">Lundi</th>
+              <th class="rowHead">Mardi</th>
+              <th class="rowHead">Mercredi</th>
+              <th class="rowHead">Jeudi</th>
+              <th class="rowHead">Vendredi</th>
+              <th class="rowHead">Samedi</th>
+              <th class="rowHead">Dimanche</th>
+            </tr>
+          </thead>
+          <tbody id="agendaBodyContainer">
+            <tr>
+              <th class="colHead" id="dateWeek1"></th>
+              <td colspan="2" class="cours">Javascript</td>
+              <td class="cours">Kick-Off & Illustrator</td>
+              <td colspan="2" class="cours">HTML CSS</td>
+              <td colspan="2" rowspan="4" class="weekend">Weekend</td>
+            </tr>
+            <tr>
+              <th class="colHead" id="dateWeek2"></th>
+              <td class="congé">Lundi de Pentecôte</td>
+              <td colspan="2" class="cours">HTML CSS</td>
+              <td class="cours">Illustrator</td>
+              <td class="cours">Javascript</td>
+              <!-- <td colspan="2" class="weekend">Weekend</td> -->
+            </tr>
+            <tr>
+              <th class="colHead" id="dateWeek3"></th>
+              <td colspan="2" class="cours">Javascript</td>
+              <td colspan="2" class="cours">HTML CSS</td>
+              <td class="cours">Github</td>
+              <!-- <td colspan="2" class="weekend">Weekend</td> -->
+            </tr>
+            <tr>
+              <th class="colHead" id="dateWeek4"></th>
+              <td colspan="2" class="cours">Javascript</td>
+              <td class="cours">HTML CSS</td>
+              <td class="waiting">?</td>
+              <td class="waiting">?</td>
+              <!-- <td colspan="2" class="weekend">Weekend</td> -->
+            </tr>
+          </tbody>
+        </table>
+        <form action="" method="post"></form>
+      </div>
+      <table id="peopleContainer">
+        <caption>
+          Listing des personnes
+        </caption>
+        <thead>
+          <tr>
+            <th class="rowHead">Avatar</th>
+            <th class="rowHead">Nom</th>
+            <th class="rowHead">Prénom</th>
+            <th class="rowHead">Mot</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+  </body>
+</html>

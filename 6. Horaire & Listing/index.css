@@ -1,0 +1,41 @@
+#leftContainer {
+  width: 57%;
+  height: 95%;
+}
+#agendaContainer {
+  width: 100%;
+  height: 100%;
+}
+#peopleContainer {
+  width: 40%;
+  height: 95%;
+}
+.rowHead,
+.colHead {
+  background-color: var(--colorDark);
+  color: var(--colorLighter);
+  border-color: var(--colorLight);
+}
+.colHead {
+  font-size: 0.9rem;
+}
+.cours {
+  background-color: var(--colorLight);
+}
+
+.weekend,
+.congé {
+  background-color: var(--colored);
+}
+
+.waiting {
+  background-color: var(--colorMid);
+  color: var(--colorLight);
+}
+img {
+  width: 65%;
+  padding-top: 4px;
+}
+.impair {
+  background-color: #e0e0e1;
+}

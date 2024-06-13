@@ -1,0 +1,167 @@
+@font-face {
+  font-family: Spartan;
+  src: url("/- Fonts/LeagueSpartan-VariableFont_wght.ttf");
+}
+:root {
+  --colorLighter: #fff3b0;
+  --colorLight: #e09f3e;
+  --colorMiddle: #9e2a2b;
+  --colorDark: #540b0e;
+  --colorDarker: #335c67;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Spartan;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+#navContainer {
+  background-color: var(--colorDarker);
+  color: var(--colorLighter);
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.2rem;
+}
+#navContainer button {
+  background-color: transparent;
+  color: var(--colorLighter);
+  border: none;
+}
+#navContainer button:hover {
+  color: var(--colorMiddle);
+  cursor: pointer;
+}
+nav svg {
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  fill: var(--colorLighter);
+}
+main {
+  background-color: var(--colorLighter);
+  width: 100vw;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+  grid-template-areas:
+    "p f"
+    "p w"
+    "p l";
+}
+#penduContainer {
+  background-color: var(--colorLight);
+  grid-area: p;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#penduMessage {
+  /* background-color: var(--colorMiddle); */
+  color: var(--colorDark);
+  width: 90%;
+  height: 10%;
+  font-size: 2rem;
+  text-align: center;
+}
+#penduImg {
+  width: 90%;
+  height: 60%;
+}
+#penduImg img {
+  object-fit: cover;
+  size: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+#wordToFind {
+  background-color: var(--colorLight);
+  color: var(--colorDarker);
+  grid-area: f;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+#wrongLetters {
+  background-color: var(--colorDarker);
+  color: var(--colorLight);
+  grid-area: w;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+#inputArea {
+  color: var(--colorDarker);
+  grid-area: l;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#inputLine {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+input {
+  background-color: var(--colorMiddle);
+  border: 3px double var(--colorDark);
+  text-align: center;
+  font-size: 3rem;
+}
+#inputLetter {
+  width: 4rem;
+  height: 4rem;
+}
+#resetInput {
+  background-image: url("/Img/reset.png");
+  object-fit: cover;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--colorLight);
+  border: 2px solid var(--colorMiddle);
+}
+#resetInput:hover {
+  background-color: var(--colorMiddle);
+  border: 3px double var(--colorDark);
+  cursor: pointer;
+}
+#resetInput:active {
+  background-color: var(--colorDark);
+  border: 3px double var(--colorDarker);
+}
+#confirm {
+  display: flex;
+  justify-content: center;
+}
+#confirm button {
+  background-color: var(--colorLight);
+  border: 3px double var(--colorMiddle);
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+}
+#confirm button:hover {
+  background-color: var(--colorMiddle);
+  border: 3px double var(--colorDark);
+}
+#confirm button:active {
+  background-color: var(--colorDark);
+  border: 3px double var(--colorDarker);
+}

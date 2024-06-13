@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Roboto;
+  src: url("/- Fonts/Roboto/Roboto-Regular.ttf");
+}
+:root {
+  --colorDark: #555b6e;
+  --colorMid: #89b0ae;
+  --colorLight: #bee3db;
+  --colorLighter: #faf9f9;
+  --colored: #fae0cf;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: var(--colorDark);
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--colorLighter);
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Par élément */
+table,
+th,
+td {
+  border: 1px solid var(--colorDark);
+  border-collapse: collapse;
+}
+th,
+td {
+  width: calc(100% / 8);
+}
+tr {
+  height: 5rem;
+}
+table {
+  text-align: center;
+  vertical-align: center;
+}
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
